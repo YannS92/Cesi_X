@@ -1,0 +1,115 @@
+/* Additional CSS for card carousel */
+.carousel-container {
+  margin: 20px 0;
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-control {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 0 10px; /* Add margin to make slides closer */
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left; /* Align text to the left */
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.text-content {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.content {
+  font-size: 1rem;
+  color: #777;
+}
+
+.image-right img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-height: 200px; /* Restrict the height of the images */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.button-container .text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #333;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.mySwiper {
+  padding-bottom: 30px;
+  margin-right: 0; /* Remove the right margin to prevent image cutting */
+}
+
+/* Additional feed-container adjustments */
+.carousel-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: start;
+  align-self: flex-start;
+}
+
+.feed-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.cardcarousel-container {
+  width: 90%;
+  margin: 20px auto;
+}

@@ -1,0 +1,49 @@
+/* userDetails.css */
+.user-details-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .user-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .user-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .user-email,
+  .user-role {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  .logs-container {
+    margin-top: 20px;
+  }
+  
+  .logs-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .log-entry {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  

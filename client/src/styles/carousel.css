@@ -1,0 +1,90 @@
+.carousel-container {
+  margin: 20px 0;
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-control {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin-right: -1%;
+  border-radius: 10px;
+  background-color: transparent; /* Set background to transparent */
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none; /* Remove shadow from the inner content */
+}
+
+.text-content {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.content {
+  font-size: 1rem;
+  color: #777;
+}
+
+.image-right img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.button-container .text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.swiper-pagination {
+  margin-top: 20px; /* Add margin to separate pagination from the slides */
+}
+
+.swiper-pagination-bullet {
+  background: #333; /* Adjust bullet color */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000; /* Adjust active bullet color */
+}
+
+.mySwiper {
+  padding-bottom: 30px; /* Add padding to the bottom to make room for pagination */
+}

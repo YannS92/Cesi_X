@@ -1,0 +1,44 @@
+.wrapper {
+  text-align: center;
+}
+
+.order-in-progress,
+.order-paid {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.circular-progressbar-container {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.ticket__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket__co {
+  display: flex;
+  align-items: center;
+}
+
+.ticket__co-icon {
+  margin-right: 10px;
+}
+
+.ticket__body {
+  text-align: left;
+}
+
+.ticket__fine-print {
+  margin-top: 10px;
+}
+
+.ticket__barcode {
+  display: block;
+  margin: 20px auto;
+}

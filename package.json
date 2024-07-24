@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@mui/base": "^5.0.0-beta.40",
+    "@nextui-org/react": "^2.4.0",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+<<<<<<< HEAD
+=======
+    "chart.js": "^4.4.3",
+>>>>>>> 8e72f17f710ce32065efe7ffea78856994bf13b8
+    "express": "^4.19.2",
+    "flowbite-react": "^0.9.0",
+    "framer-motion": "^11.2.7",
+    "nodemailer": "^6.9.13",
+<<<<<<< HEAD
+=======
+    "react-chartjs-2": "^5.2.0",
+>>>>>>> 8e72f17f710ce32065efe7ffea78856994bf13b8
+    "react-loader-spinner": "^6.1.6"
+  }
+}

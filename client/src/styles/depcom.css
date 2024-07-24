@@ -1,0 +1,29 @@
+.DepComercial-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .DepComercial-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .DepComercial-iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* Style facultatif pour ajuster la taille de l'iframe en fonction de la taille de l'écran */
+  @media (max-width: 768px) {
+    .DepComercial-iframe {
+      height: 400px;
+    }
+  }
+  

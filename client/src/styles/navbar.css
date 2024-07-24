@@ -1,0 +1,412 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Adjust to space-between */
+    align-items: center;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px; /* Reduce padding to decrease navbar height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1001;
+}
+
+.app-logo,
+.logo {
+    width: 60px; /* Reduce the logo size */
+    height: auto;
+    margin-left: 0;
+}
+
+.menu-button, .cart-button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.cart-button {
+    margin-left: auto;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.auth-buttons .sign-in, .auth-buttons .sign-up {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .sign-in:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.auth-buttons .sign-up:hover {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333333;
+    padding: 0 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-right: auto;
+}
+
+.app-logo {
+    width: 60px; /* Reduce the logo size */
+    height: auto;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Ensure the search bar takes up space */
+    margin-right: 5%;
+}
+
+.search-input {
+    width: 100%; /* Ensure the input field takes the full width */
+    max-width: 500px; /* Limit the maximum width */
+    padding: 5px;
+    margin-right: 10px; /* Adjust spacing between input and icon */
+    border: 0px solid #ccc;
+}
+
+.search-container .MuiIconButton-root {
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #result {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #result ul {
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #result li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+  
+  #result li:last-child {
+    border-bottom: none;
+  }
+  
+  #result li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #result li a:hover {
+    background-color: #f0f0f0;
+    align-items: center;
+
+  }
+  
+  #result p {
+    padding: 10px;
+    color: #999;
+  }x
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.dropdown-menu.fade-in {
+    animation-name: fadeIn;
+}
+
+.dropdown-menu.fade-out {
+    animation-name: fadeOut;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-content {
+    text-align: left;
+    font-size: 1rem;
+    height: auto;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+@keyframes cartFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cartFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.cart-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.cart-menu.fade-in {
+    animation-name: cartFadeIn;
+}
+
+.cart-menu.fade-out {
+    animation-name: cartFadeOut;
+}
+
+.close-cart-button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    margin-bottom: 10%;
+}
+
+.close-cart-button:hover {
+    background-color: #555;
+}
+
+.spacer {
+    width: 20px; /* Adjust the width as needed */
+}
+
+/* Styles for My Restaurants dropdown */
+.submenu-item {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.submenu-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Notification button */
+.notification-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.notification-dropdown {
+    position: absolute;
+    top: 50px; /* Ajustez en fonction de la hauteur de votre navbar */
+    right: 0;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1002;
+    overflow: hidden;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover {
+    background-color: #f0f0f0;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-message {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.notification-meta {
+    font-size: 0.8em;
+    color: #666;
+    text-align: right;
+}
+
+.notification-meta span {
+    display: block;
+}
+
+.notification-meta .notification-time {
+    font-weight: bold;
+    color: #333;
+}

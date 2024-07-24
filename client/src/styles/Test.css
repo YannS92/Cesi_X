@@ -1,0 +1,23 @@
+.container {
+    padding: 20px;
+    font-family: Arial;
+    display: flex; /* Use flexbox to align children */
+    flex-direction:row; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+}
+
+.button {
+    padding: 10px 100px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: #c0c2c0; /* Default background for all buttons */
+}
+
+.input-file {
+    margin: 10px 0;
+    display: block; /* Align input type file */
+}
