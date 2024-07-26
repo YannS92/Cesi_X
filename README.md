@@ -1,6 +1,6 @@
 # Cesi_X
 
-Welcome to the Cesi_X repository! This project is designed to [brief description of the project]. 
+Welcome to the Cesi_X repository! This project is designed to The project involves creating an innovative software platform for online catering, integrating various services for end users, restaurateurs, delivery drivers, developers, and sales and technical teams. It represents an opportunity to put into practice all the IT skills acquired, and to take on challenges similar to those encountered in a professional environment. 
 
 ## Table of Contents
 
