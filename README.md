@@ -1,6 +1,6 @@
-# Project Name
+# Cesi_X
 
-Welcome to the Project Name repository! This project is designed to [brief description of the project]. 
+Welcome to the Cesi_X repository! This project is designed to [brief description of the project]. 
 
 ## Table of Contents
 
@@ -78,7 +78,7 @@ Copy code
 
 ### Explanation
 
-- **Project Name:** The title of your project.
+- **Cesi_X:** The title of your project.
 - **Table of Contents:** Provides quick navigation links to different sections of the README.
 - **Introduction:** A brief overview of what the project is about.
 - **Features:** A list of key features and functionalities of the project.
